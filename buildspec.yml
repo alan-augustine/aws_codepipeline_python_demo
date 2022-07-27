@@ -28,4 +28,4 @@ phases:
 artifacts:
   files:
     - myapp.zip
-  s3-prefix: aws_codepipeline_python_demo
+  s3-prefix: aws_codepipeline_python_demo111
