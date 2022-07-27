@@ -1,5 +1,8 @@
 version: 0.0
 os: linux
+files:
+ - source: /requirements.txt
+   destination: /var/
 hooks:
   BeforeInstall:
     - location: scripts/codedeploy_before_install.sh
