@@ -27,4 +27,5 @@ phases:
       - echo Execution completed on `date`
 artifacts:
   files:
-    - 'myapp.zip'
+    - myapp.zip
+  s3-prefix: aws_codepipeline_python_demo
