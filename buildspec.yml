@@ -25,7 +25,6 @@ phases:
     on-failure: CONTINUE   
     commands:
       - echo Execution completed on `date`
-#artifacts:
-#  files:
-#    - 'dist/singly_linkedlist-0.0.1-py3-none-any.whl'
-#    - 'dist/singly-linkedlist-0.0.1.tar.gz'
+artifacts:
+  files:
+    - 'myapp.zip'
