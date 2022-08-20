@@ -30,4 +30,4 @@ Logs:
 
 - Will deploy to EC2 instances already running that matches a tag
 
-- We manually specify artifact each time we run deployment (?) , if  we manually trigger codedeploy, instead of codepipeline 
+- We need to manually specify artifact each time we run deployment (?) (i.e when we create deployment), if  we manually trigger codedeploy, instead of codepipeline 
