@@ -10,7 +10,7 @@ Pre-requisite:
   - IAM instnce profile - permission for Ec2 instance to access S3, if code is stored in S3 
     And create a role using this policy and assignto EC2 instance during instance launch
 
-- Need agent installation EC2 user script:
+- Need Codedeploy agent installation - EC2 userdata script:
 #!/bin/bash
 sudo yum update -y
 sudo yum install -y ruby
@@ -21,7 +21,7 @@ chmod +x ./install
 sudo ./install auto
 sudo service codedeploy-agent status
 
-- it may take few min.s to complete execution of user data script, after the EC2 instance is up
+- It may take few min.s to complete execution of user data script, after the EC2 instance is up (even, after we SSH to instance)
 check progress: /var/log/cloud-init-output.log
 
 Logs:
