@@ -1,0 +1,25 @@
+Notes
+------
+Client Macbook cannot SSH to AWS EC2 instance - use EC2 instance connect, which uses browser
+
+CodeDeploy
+-------------
+- Need agent installation EC2 user script:
+#!/bin/bash
+sudo yum update -y
+sudo yum install -y ruby
+sudo yum install -y wget
+cd /home/ec2-user
+wget https://aws-codedeploy-us-east-2.s3.amazonaws.com/latest/install
+chmod +x ./install
+sudo ./install auto
+sudo service codedeploy-agent status
+
+- it may take few min.s to complete execution of user data script, after the EC2 instance is up
+check progress: /var/log/cloud-init-output.log
+
+Logs:
+/var/log/cloud-init.log 
+/var/log/cloud-init-output.log
+
+- Will deploy to EC2 instances already running that matches a tag
