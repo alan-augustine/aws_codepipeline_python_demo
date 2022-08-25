@@ -5,7 +5,7 @@ Client Macbook cannot SSH to AWS EC2 instance - use EC2 instance connect, which 
 CodeDeploy
 -------------
 Pre-requisite:
-  - service role to handle EC2 instances
+  - service role for CodeDeploy to handle EC2 instances
   - We will build the code from GitHub using CodeBuild and will store the zip artifact in S3 - s3://artifact-storage/aws_codepipeline_python_demo-1/myapp.zip 
   - IAM instnce profile - permission for Ec2 instance to access S3, if code is stored in S3 
     And create a role using this policy and assignto EC2 instance during instance launch
