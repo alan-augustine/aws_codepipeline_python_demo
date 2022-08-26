@@ -20,6 +20,7 @@ wget https://aws-codedeploy-us-east-2.s3.amazonaws.com/latest/install
 chmod +x ./install
 sudo ./install auto
 sudo service codedeploy-agent status
+ps: Dont forget to assign 'CodeDeploy-S3-Access' role to EC2 instance
 
 - It may take few min.s to complete execution of user data script, after the EC2 instance is up (even, after we SSH to instance)
 check progress: /var/log/cloud-init-output.log
