@@ -29,4 +29,8 @@ phases:
 artifacts:
   files:
     - myapp.zip
+    # my-subdirectory/**/* represents all files recursively starting from a subdirectory named my-subdirectory.
+    - scripts/**/*
     - appspec.yml
+    # buildspec.yml - need only in source repo, not in Artifact, since its used
+    # only for build & not deployment(deployment - build artifact is used)

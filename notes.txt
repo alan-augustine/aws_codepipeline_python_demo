@@ -39,3 +39,18 @@ CodeDeploy Logs:
 
 - For manual run of codedeploy, we need to create a deployment to deploy code each time
 - We need to manually specify artifact each time we run deployment (?) (i.e when we create deployment), if  we manually trigger codedeploy, instead of codepipeline 
+
+
+
+Errors
+-------
+CodeDeploy
+============
+Error code
+ScriptMissing
+Script name
+scripts/codedeploy_before_install.sh
+Message
+Script does not exist at specified location: /opt/codedeploy-agent/deployment-root/a1140779-6c53-4853-bf88-394876d6fb45/d-8ZEJW6LHJ/deployment-archive/scripts/codedeploy_before_install.sh
+Reason: Deploy agent expects Scripts we specified in buildspec.yml deployment-archive directory in /opt path 
+Ref[1]: https://github.com/alan-augustine/aws_codepipeline_python_demo/blob/master/appspec.yml#L10
