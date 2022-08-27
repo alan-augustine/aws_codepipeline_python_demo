@@ -27,6 +27,4 @@ phases:
       - echo Execution completed on `date`
 artifacts:
   files:
-    - appspec.yml
-    - myapp
-    - scripts
+    - "**/*"
