@@ -2,6 +2,8 @@ Notes
 ------
 Client Macbook cannot SSH to AWS EC2 instance - use EC2 instance connect, which uses browser
 Client Macbook cannot access Flask App from Chrome (port 80, 5000 etc.)
+The path pattern we have to specify in 'artifacts' in buildspec.yml and 
+ 'source/destination' in appspec.yml can be bit confusing and require some trial and error to figure out
 
 CodeDeploy
 -------------
