@@ -29,6 +29,11 @@ Logs:
 /var/log/cloud-init.log 
 /var/log/cloud-init-output.log
 
+CodeDeploy Logs:
+- Deployment logs: /opt/codedeploy-agent/deployment-root/deployment-logs/codedeploy-agent-deployments.log
+- Artifact Download path : /opt/codedeploy-agent/deployment-root/xxxx/xxxx/deployment-archive/
+- CodeDeploy Agent logs: /var/log/aws/codedeploy-agent/codedeploy-agent.log 
+
 - Will deploy to EC2 instances already running that matches a tag
 
 - For manual run of codedeploy, we need to create a deployment to deploy code each time

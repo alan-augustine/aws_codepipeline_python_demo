@@ -1,12 +1,8 @@
 version: 0.0
 os: linux
 files:
- - source: /scripts/codedeploy_after_install.sh
-   destination: /var/
- - source: /myapp
-   destination: /var/
- - source: /requirements.txt
-   destination: /var/  
+ - source: /myapp.zip
+   destination: /var  
 hooks:
   BeforeInstall:
     - location: scripts/codedeploy_before_install.sh
