@@ -25,6 +25,8 @@ phases:
     on-failure: CONTINUE   
     commands:
       - echo Execution completed on `date`
+# Ref: https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html#build-spec.artifacts
 artifacts:
   files:
-    - "**/*"
+    - myapp.zip
+    - appspec.yml

@@ -1,6 +1,9 @@
 version: 0.0
 os: linux
 files:
+# If source refers to a directory, then all files (and only files, not directories) 
+# in the directory are copied to the instance.
+# Ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-files.html
  - source: /myapp.zip
    destination: /var  
 hooks:

@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "This message is from codedeploy_stop_server.sh"
+echo "------------- Start codedeploy_stop_server.sh"
+echo "------------- End codedeploy_stop_server.sh"

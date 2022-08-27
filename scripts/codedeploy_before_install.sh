@@ -1,2 +1,3 @@
 #!/bin/bash
-echo "This message is from codedeploy_before_install.sh"
+echo "---------- Start codedeploy_before_install.sh"
+echo "---------- End codedeploy_before_install.sh"

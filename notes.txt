@@ -1,6 +1,7 @@
 Notes
 ------
 Client Macbook cannot SSH to AWS EC2 instance - use EC2 instance connect, which uses browser
+Client Macbook cannot access Flask App from Chrome (port 80, 5000 etc.)
 
 CodeDeploy
 -------------
